@@ -182,7 +182,7 @@ body {
 
   .img-container__desktop img {
     height: 250px;
-    top: 30%;
+    top: 27%;
     right: 62px;
   }
 
@@ -193,5 +193,66 @@ body {
 
   .img-container__box img {
     width: 43%;
+  }
+}
+
+@media (max-width: 1080px) {
+  body {
+    align-items: flex-end;
+  }
+
+  .main-container {
+    width: 320px;
+    height: 500px;
+    grid-template-columns: 0;
+
+    display: block;
+  }
+
+  .img-continer {
+    position: relative;
+  }
+
+  .img-container__mobile {
+    display: block;
+    position: absolute;
+    height: 250px;
+    margin-left: 15px;
+    margin-top: -107px;
+    background-image: url(images/bg-pattern-mobile.svg);
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: 25px 110px;
+  }
+
+  .img-container__desktop {
+    display: none;
+  }
+
+  .img-container__box {
+    display: none;
+  }
+
+  .accordion {
+    margin-left: 1.3rem;
+    width: 90%;
+  }
+
+  .accordion__qa {
+    justify-content: space-evenly;
+  }
+
+  .accordion__question {
+    font-size: 1.2rem;
+    padding: 9px 0;
+  }
+
+  .accordion__answer {
+    font-size: 1rem;
+  }
+
+  .title-faq {
+    margin: 3.5rem 0;
+    text-align: center;
   }
 }
